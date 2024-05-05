@@ -160,3 +160,8 @@ cython_debug/
 #.idea/
 
 iso/
+
+output-vagrant/
+output-virtualbox-iso/
+packer_cache/
+.vagrant/
