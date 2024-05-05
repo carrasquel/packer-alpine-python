@@ -33,3 +33,5 @@ pip3 --version
 rm "get-pip.py"
 
 sudo ln -sf /usr/bin/python3 /usr/bin/python
+
+sudo apk add vim vim-doc vim-tutor

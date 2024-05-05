@@ -82,7 +82,7 @@
         "vm_name": "{{user `vm_name`}}"
       }
     ],
-    "description": "Build base Alpine Linux x86_64",
+    "description": "Build base Alpine Linux x86_64 with Python",
     "provisioners": [
       {
         "inline": [
@@ -121,6 +121,6 @@
       "root_password": "python",
       "ssh_password": "python",
       "ssh_username": "python",
-      "vm_name": "alpine-3.16.2-x86_64"
+      "vm_name": "alpine-python.3.16.2-x86_64"
     }
   }
