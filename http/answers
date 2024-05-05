@@ -1,0 +1,20 @@
+KEYMAPOPTS=none
+HOSTNAMEOPTS=alpine
+DEVOPTS=mdev
+INTERFACESOPTS="auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+    hostname alpine-test
+"
+DNSOPTS="-d example.com 8.8.8.8"
+TIMEZONEOPTS=none
+PROXYOPTS=none
+APKREPOSOPTS="-1"
+USEROPTS="-a -u -g audio,video,netdev vagrant"
+SSHDOPTS=openssh
+NTPOPTS=none
+DISKOPTS="-m sys /dev/sda"
+LBUOPTS="/media/sdb1"
+APKCACHEOPTS="/media/sdb1/cache"
