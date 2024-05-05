@@ -14,6 +14,12 @@ You can customize this login
 
     packer build -var=ssh_username=youruser -var=ssh_password=yourpassword
 
+## Installed packages and software
+
+- Python (3.11.0)
+- Git
+- Vim
+
 Further customization is possible by overriding other variables, or editing `alpine.json` or `http/answers`.
 
 ## Vagrant Support

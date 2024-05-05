@@ -103,6 +103,10 @@
           "sed '/PermitRootLogin yes/d' -i /etc/ssh/sshd_config"
         ],
         "type": "shell"
+      },
+      {
+        "script": "./script/python-install.sh",
+        "type": "shell"
       }
     ],
     "variables": {
