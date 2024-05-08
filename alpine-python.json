@@ -97,8 +97,7 @@
           "user={{user `ssh_username`}}",
           "echo Add user $user with NOPASSWD sudo",
           "echo $user 'ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers.d/$user",
-          "chmod 0440 /etc/sudoers.d/$user",
-          "wget http://{{ .HTTPIP }}:{{ .HTTPPort }}/python-install.sh<enter><wait>",
+          "chmod 0440 /etc/sudoers.d/$user",          
           "echo '{{user `ssh_username`}}:{{user `ssh_password`}}' | chpasswd",
           "echo disable ssh root login",
           "chage --lastday 0 {{user `ssh_username`}}",
@@ -112,6 +111,7 @@
       },
       {
         "inline": [
+          "wget https://raw.githubusercontent.com/carrasquel/packer-alpine-python/main/http/python-install.sh",
           "bash python-install.sh"
         ],
         "type": "shell"
