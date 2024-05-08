@@ -26,11 +26,7 @@ echo "Installed Python v$VERSION"
 python3 --version
 
 sudo apk add py3-setuptools
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-sudo python3 get-pip.py
-echo "Installed latest pip"
-pip3 --version
-rm "get-pip.py"
+sudo apk add --update --no-cache curl py-pip
 
 sudo ln -sf /usr/bin/python3 /usr/bin/python
 
