@@ -25,7 +25,6 @@ sudo rm -rf Python-v$VERSION
 echo "Installed Python v$VERSION"
 python3 --version
 
-sudo apk add py3-setuptools
 sudo apk add --update --no-cache curl py-pip
 
 sudo ln -sf /usr/bin/python3 /usr/bin/python
