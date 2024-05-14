@@ -106,13 +106,22 @@
         "type": "shell"
       },
       {
+        "type": "file",
+        "source": "./http/python-install.sh",
+        "destination": "/tmp/python-install.sh"
+      },
+      {
+        "type": "file",
+        "source": "./http/motd",
+        "destination": "/etc/motd"
+      },
+      {
         "inline": ["sleep 10"],
         "type": "shell"
       },
       {
         "inline": [
-          "wget https://raw.githubusercontent.com/carrasquel/packer-alpine-python/main/http/python-install.sh",
-          "bash python-install.sh"
+          "bash /tmp/python-install.sh"
         ],
         "type": "shell"
       }
